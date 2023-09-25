@@ -1,10 +1,10 @@
 import Part from "./Part"
-const Content = (props) => {
+const Content = ({parts}) => {
   return (
     <div>
-      {props.parts.map((part, ix) => 
-        <Part part={part} key={ix}></Part>
-      )}
+      <Part part={parts[0]}></Part>
+      <Part part={parts[1]}></Part>
+      <Part part={parts[2]}></Part>
     </div>
   )
 }
